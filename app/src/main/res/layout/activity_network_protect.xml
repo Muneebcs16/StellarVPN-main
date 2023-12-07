@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_color"
+        android:orientation="vertical">
+
+        <include layout="@layout/app_bar_main"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/image_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <ImageView
+                        android:padding="@dimen/_15sdp"
+                        android:visibility="gone"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:layout_centerHorizontal="true"
+                        app:srcCompat="@drawable/wifi_shield"
+                        android:id="@+id/wifi_p"
+                        />
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:padding="@dimen/_15sdp"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_110sdp"
+                        android:layout_centerHorizontal="true"
+                        app:srcCompat="@drawable/protected_wifi"
+                        android:id="@+id/wifiPN"
+                        />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/wifiProtected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image_data"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:text="UNPROTECTED"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp" />
+
+                <TextView
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:id="@+id/messageUnprotected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Turn On the VPN to secure your data and protect yourself from online threats."
+                    android:layout_below="@id/wifiProtected"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textSize="@dimen/_13sdp"
+                    android:textColor="@color/white"/>
+
+                <TextView
+
+                    android:id="@+id/btnSecureWifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/messageUnprotected"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_13sdp"
+                    android:background="@drawable/yellow_background"
+                    android:paddingStart="@dimen/_35sdp"
+                    android:paddingTop="@dimen/_6sdp"
+                    android:paddingEnd="@dimen/_35sdp"
+                    android:paddingBottom="@dimen/_6sdp"
+                    android:text="SECURE WI-FI"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/single_line"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:layout_below="@id/btnSecureWifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#22000000"/>
+
+                <RelativeLayout
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:id="@+id/fl_adplaceholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/single_line"
+                    >
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:id="@+id/btn_another"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@id/fl_adplaceholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:layerType="software"
+                        android:layout_width="@dimen/_18sdp"
+                        android:layout_height="@dimen/_18sdp"
+                        android:src="@drawable/ip_wifi"/>
+
+                    <LinearLayout
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Wi-fi Information"
+                            android:textSize="@dimen/_14sdp"
+                            android:textColor="@color/white"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_gravity="start"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Name"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_11sdp"/>
+
+
+                            <TextView
+                                android:textColor="@color/white"
+                                android:id="@+id/wifi_ssid_name"
+                                android:gravity="end"
+                                android:layout_gravity="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="unknown"
+                                android:textSize="@dimen/_11sdp"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_gravity="start"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ip Address"
+                                android:textSize="@dimen/_11sdp"
+                                android:textColor="@color/white"/>
+
+
+                            <TextView
+
+                                android:textColor="@color/white"
+                                android:id="@+id/txt_ip_address"
+                                android:gravity="end"
+                                android:layout_gravity="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textSize="@dimen/_11sdp"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_gravity="start"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:paddingEnd="@dimen/_10sdp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Link Speed"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_11sdp"/>
+
+
+                            <TextView
+
+                                android:textColor="@color/white"
+                                android:id="@+id/txt_link_speed"
+                                android:gravity="end"
+                                android:layout_gravity="end"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textSize="@dimen/_11sdp"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </LinearLayout>
+</layout>

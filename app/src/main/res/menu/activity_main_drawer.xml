@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+
+
+    <group android:checkableBehavior="single">
+
+
+
+        <item
+            android:id="@+id/nav_upgrade"
+            android:icon="@drawable/crown"
+            android:title="Choose Country"
+            android:visible="false"/>
+
+        <item
+            android:iconTint="@color/white"
+            android:id="@+id/nav_speed_test"
+            android:icon="@drawable/speed_test"
+            android:title="Speed Test"
+            android:visible="false"
+            />
+        <item
+            android:id="@+id/nav_ip_config"
+            android:icon="@drawable/check_ip"
+            android:title="Check IP"
+            android:visible="false"
+            />
+        <item
+            android:id="@+id/nav_protector"
+            android:icon="@drawable/network_protector"
+            android:title="Network Protector"
+            android:visible="false"
+            />
+
+
+        <item
+            android:id="@+id/nav_helpus"
+            android:icon="@drawable/ic_baseline_mail_24"
+            android:title="Email Us" />
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@android:drawable/star_on"
+            android:title="Rate us" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share"
+            android:title="Share Us" />
+
+
+        <item
+            android:id="@+id/nav_policy"
+            android:icon="@drawable/ic_privacy"
+            android:title="Privacy policy &amp; Terms" />
+
+    </group>
+
+</menu>

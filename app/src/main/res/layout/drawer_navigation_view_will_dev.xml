@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.navigation.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_navigation_view"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    app:headerLayout="@layout/nav_header_main_will_dev"
+    app:itemIconTint="#FFFFFF"
+    app:itemTextColor="#FFFFFF"
+    app:menu="@menu/activity_main_drawer">
+
+
+    <TextView
+
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="450dp"
+        android:text="@string/version"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_15sdp" />
+
+
+
+</com.google.android.material.navigation.NavigationView>

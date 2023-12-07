@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name2">StellarVPN</string>
+    <string name="app_name">StellarVPN</string>
+    <string name="vpn_process_name" translatable="false">:my.custom.vpn.process.name</string>
+    <string name="vpn_process" translatable="false">33223327</string>
+    <string name="vpn_provider_authorities" translatable="false">com.anchorfree.hydrasdk.app.demo</string>
+    <string name="version">Version 1.0</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="connected">You are <font fgcolor="#5D17EB"><b>Connected</b></font></string>
+<!--    <string name="disconnected">You are <font fgcolor="#E82D39"><b>Disconnected</b></font></string>-->
+    <string name="disconnected">You are Disconnected</string>
+    <string name="carrier_id_title">Carrier ID: </string>
+    <string name="connecting"><font fgcolor="#ff3F51B5">Connecting</font></string>
+    <string name="paused"><font fgcolor="#ffFF5722">Paused</font></string>
+
+    <string name="nav_header_title">Premium VPN</string>
+    <bool name="ads_switch">true</bool> <!--DON'T CHANGE !!-->
+    <bool name="facebook_list_ads">false</bool> <!--DON'T CHANGE !!-->
+    <bool name="admob_list_ads">true</bool> <!--DON'T CHANGE !!-->
+    <string name="privacy_policy_link">https://sites.google.com/view/bluex-vpn/</string> <!--Change Privacy Policy URL-->
+    <string name="one_month">$3.29</string>
+    <string name="three_months">$4.39</string>
+    <string name="six_months">$6.59</string>
+    <string name="twelve_months">$9.49</string>
+    <string name="one_month_txt">Monthly</string>
+    <string name="three_months_txt">3 Months</string>
+    <string name="six_months_txt"> 6 Months</string>
+    <string name="twelve_months_txt">12 Months</string>
+    <string name="kBps">kB/s</string>
+    <string name="MBps">MB/s</string>
+    <string name="kbps">kb/s</string>
+    <string name="Mbps">Mb/s</string>
+    <string name="plus99">99+</string>
+    <string name="dash">-</string>
+    <string name="welcome_message">Welcome to %1$s!</string>
+    <!--    <string name="privacy_policy_msg">By using this application, you agree to our Privacy Policy.</string>-->
+    <string name="privacy_policy_msg">By checking this box you agree to the Terms and Conditions of our app and you acknowledge the disclaimer mentioned above.</string>
+    <string name="disclaimer_msg">StellarVPN collects data that might be considered as sensitive by some users. We collect location and device identifiers with the sole purpose of improving user experience, gathering analytics for internal use only. This data is not sold outside. Feel free to email us for further details.</string>
+    <string name="privacy_policy_button">ACCEPT &amp; CONTINUE</string>
+    <string name="limited_offer">Limited Time Offer</string>
+    <string name="unlock">Unlock Premium Servers\nWith No Ads</string>
+    <string name="watch_to_unlock">Watch a Video to Unlock\nPremium Servers</string>
+
+
+    <string name="hello_world">Hello <font fgcolor="#ffff0000"> world!</font></string>
+
+</resources>
